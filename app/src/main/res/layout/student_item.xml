@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:animationCache="true"
+    app:cardBackgroundColor="#1E88E5"
+    app:cardCornerRadius="1in">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_student"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/student2" />
+
+        <TextView
+            android:id="@+id/textviewName"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/image_student"
+            android:hint="Student Name"
+            android:textColor="#EAE1E1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textviewClass"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewName"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/image_student"
+            android:hint="Student Class"
+            android:textColor="#DCE3E8"
+            android:textSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageButtonDeleteStudent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/imageButtonEditStudent"
+            android:src="@drawable/delete2" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageButtonEditStudent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/edit2" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
